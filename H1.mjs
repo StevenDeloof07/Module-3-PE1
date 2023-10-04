@@ -7,7 +7,7 @@ if (height % 2 == 0) {
     const half_height = height / 2;
     let star_amount = 0
     for (let i = 1; i <= half_height; i++) {
-        let star = "";
+        var star = "";
         star_amount += 2;
         let position = half_height - i;
         for (let j = 0; j < position; j++) {
@@ -18,6 +18,7 @@ if (height % 2 == 0) {
         }
         console.log(star);
     }
+    console.log(star);
     for (let i = 1; i <= half_height; i++) {
         let star = ""
         star_amount -= 2;
