@@ -5,16 +5,30 @@ const userInput = readline.createInterface({input, output});
 const height = await userInput.question("Give the height of the star: ");
 if (height % 2 == 0) {
     const half_height = height / 2;
-    let star_amount = "*"
-    for(let i = 1; i <= half_height; i++) {
-        console.log(star_amount);
-        star_amount += "*";
+    let star_amount = 0
+    for (let i = 1; i <= half_height; i++) {
+        let star = "";
+        star_amount += 2;
+        let position = half_height - i;
+        for (let j = 0; j < position; j++) {
+            star += " ";
+        }
+        for (let j = 0; j < star_amount; j++) {
+            star += "*";
+        }
+        console.log(star);
     }
-    for (let i = half_height; i >= 1;i--) {
-        console.log(star_amount);
-        star_amount -= "*";
+    for (let i = 1; i <= half_height; i++) {
+        let star = ""
+        star_amount -= 2;
+        for (let j = 0; j < i; j++) {
+            star += " ";
+        }
+        for (let j = 0; j < star_amount; j++) {
+            star += "*";
+        }
+        console.log(star);
     }
-    
 }
 else {
     const middle_heigth = (height / 2) + 0.5;
