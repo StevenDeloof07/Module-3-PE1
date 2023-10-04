@@ -1,0 +1,1 @@
+H1: eventueel een for loop ipv 3 gebruiken, en een ifelse statement gebruiken om te zien of spatie of ster nodig is.
